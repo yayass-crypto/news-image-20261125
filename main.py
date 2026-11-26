@@ -24,7 +24,7 @@ PNG_MAGIC = b"\x89PNG\r\n\x1a\n"
 
 def resolve_output_dir():
     """Return the directory the image must be written to."""
-    return os.environ.get("MAKEFUN_OUTPUT_DIR", "out")
+    return os.environ.get("MAKEFUN_OUTPUT_DIR") or "out"
 
 
 def source_image():

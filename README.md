@@ -45,6 +45,15 @@ python3 main.py
 the 1024×1024 dimension limit, then verifies the written bytes are
 identical. No network, no randomness — every run writes the same bytes.
 
+## Verification
+
+- `entry.png`: 1024×1024, 246,128 bytes, sha256
+  `eb5d6c15b69c725a6e75caa70e3c9110b1ac9ad4b30f2202d680ced4110201bb`.
+- `main.py` run four times to different output dirs: all outputs
+  byte-identical to `entry.png` (see the build record).
+- Image visually verified twice: all 30 stories legible, map pins match
+  the legend, no overlaps.
+
 ## Competition
 
 [news-image-20261125 on make.fun](https://make.fun/bounty/news-image-20261125)
